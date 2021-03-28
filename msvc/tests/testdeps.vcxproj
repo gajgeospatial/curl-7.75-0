@@ -1,0 +1,1301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9E66B4A6-2ADE-38DF-AECD-778B69693F9C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>testdeps</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-7.75.0\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\brotli-1.0.7\c\include;N:\Development\Dev_Base\zstd-1.4.5\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-7.75.0\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\brotli-1.0.7\c\include;N:\Development\Dev_Base\zstd-1.4.5\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-7.75.0\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\brotli-1.0.7\c\include;N:\Development\Dev_Base\zstd-1.4.5\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-7.75.0\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\brotli-1.0.7\c\include;N:\Development\Dev_Base\zstd-1.4.5\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="N:\Development\Dev_Base\curl-7.75.0\tests\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule N:/Development/Dev_Base/curl-7.75.0/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/curl-7.75.0 -BN:/Development/Dev_Base/curl-7.75.0/msvc --check-stamp-file N:/Development/Dev_Base/curl-7.75.0/msvc/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">N:\Development\Dev_Base\curl-7.75.0\msvc\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule N:/Development/Dev_Base/curl-7.75.0/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/curl-7.75.0 -BN:/Development/Dev_Base/curl-7.75.0/msvc --check-stamp-file N:/Development/Dev_Base/curl-7.75.0/msvc/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">N:\Development\Dev_Base\curl-7.75.0\msvc\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule N:/Development/Dev_Base/curl-7.75.0/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/curl-7.75.0 -BN:/Development/Dev_Base/curl-7.75.0/msvc --check-stamp-file N:/Development/Dev_Base/curl-7.75.0/msvc/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">N:\Development\Dev_Base\curl-7.75.0\msvc\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule N:/Development/Dev_Base/curl-7.75.0/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/curl-7.75.0 -BN:/Development/Dev_Base/curl-7.75.0/msvc --check-stamp-file N:/Development/Dev_Base/curl-7.75.0/msvc/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">N:\Development\Dev_Base\curl-7.75.0\msvc\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\ZERO_CHECK.vcxproj">
+      <Project>{4C19F895-D195-3A6D-B653-512D7FDCE8E9}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\chkdecimalpoint.vcxproj">
+      <Project>{C672CD65-3920-329A-8D57-C13BFF4E0154}</Project>
+      <Name>chkdecimalpoint</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\chkhostname.vcxproj">
+      <Project>{AD99D255-FB6B-313E-BAE0-CD1E9A9187E9}</Project>
+      <Name>chkhostname</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\server\disabled.vcxproj">
+      <Project>{73A9FF01-68D7-3A90-A1AB-07999E7EB863}</Project>
+      <Name>disabled</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\server\fake_ntlm.vcxproj">
+      <Project>{F2BFDDF4-4397-3328-809C-CADDBA0FCBD7}</Project>
+      <Name>fake_ntlm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\server\getpart.vcxproj">
+      <Project>{3D68751A-75F8-302C-998B-EC318AB041CF}</Project>
+      <Name>getpart</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1156.vcxproj">
+      <Project>{C4A9E668-9CEB-3BA7-9B99-566F54F34226}</Project>
+      <Name>lib1156</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1500.vcxproj">
+      <Project>{04708B9D-73AE-3B99-B881-320291420CBA}</Project>
+      <Name>lib1500</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1501.vcxproj">
+      <Project>{BB953DB7-7EBA-30B9-973D-41312C5B9B58}</Project>
+      <Name>lib1501</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1502.vcxproj">
+      <Project>{516470FD-57F1-3052-B10A-6F42F4F8E5B5}</Project>
+      <Name>lib1502</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1503.vcxproj">
+      <Project>{82E01CFF-B62B-35BA-9FC4-EA94F9A1D5CA}</Project>
+      <Name>lib1503</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1504.vcxproj">
+      <Project>{CD0840BE-BA7E-3CC9-88B2-7334B9ED929B}</Project>
+      <Name>lib1504</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1505.vcxproj">
+      <Project>{CB53ED2D-A8B8-31A1-814C-56B0DA121F09}</Project>
+      <Name>lib1505</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1506.vcxproj">
+      <Project>{62657FF6-7DE1-38A0-8D9D-722BCCA2A080}</Project>
+      <Name>lib1506</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1507.vcxproj">
+      <Project>{A7CA1EE9-7AFB-3321-91A4-4C2EC0FFE0DD}</Project>
+      <Name>lib1507</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1508.vcxproj">
+      <Project>{AD35C54B-4795-3DF2-BF67-7F086969A139}</Project>
+      <Name>lib1508</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1509.vcxproj">
+      <Project>{4889C5A3-BDF2-31FB-BA41-75E1D0B1CC47}</Project>
+      <Name>lib1509</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1510.vcxproj">
+      <Project>{BA6DDF8F-250A-3F24-8518-751584E34DF3}</Project>
+      <Name>lib1510</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1511.vcxproj">
+      <Project>{FB4AA1C0-8506-34A5-8A02-D4BBE2111B8E}</Project>
+      <Name>lib1511</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1512.vcxproj">
+      <Project>{4686B26A-D76B-3C6F-A6DC-E6AE70BC42D9}</Project>
+      <Name>lib1512</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1513.vcxproj">
+      <Project>{B931B570-0CDB-34F7-8366-66805B58F4FA}</Project>
+      <Name>lib1513</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1514.vcxproj">
+      <Project>{9CE7140F-EF02-36F3-B8EA-836EA6E79AC9}</Project>
+      <Name>lib1514</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1515.vcxproj">
+      <Project>{44A85896-9514-3CB7-93ED-32484214A8A9}</Project>
+      <Name>lib1515</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1517.vcxproj">
+      <Project>{85F5C8AA-9EB5-3547-9617-B475F3E475CA}</Project>
+      <Name>lib1517</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1518.vcxproj">
+      <Project>{0D871DAF-BEB7-3931-B799-55F9F159633C}</Project>
+      <Name>lib1518</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1520.vcxproj">
+      <Project>{63AF4DB5-81A9-3515-9A66-0C1F367978F5}</Project>
+      <Name>lib1520</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1521.vcxproj">
+      <Project>{952A86FD-35C9-3CEA-B0CF-108F70367CE1}</Project>
+      <Name>lib1521</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1522.vcxproj">
+      <Project>{349CCB5B-4625-3C37-8900-C576EB3547B7}</Project>
+      <Name>lib1522</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1523.vcxproj">
+      <Project>{98DF4498-F2A9-309D-808A-37EBF963FE39}</Project>
+      <Name>lib1523</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1525.vcxproj">
+      <Project>{32949743-2E0A-3D09-A9E6-295BB3F3C0E0}</Project>
+      <Name>lib1525</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1526.vcxproj">
+      <Project>{C423350D-2F34-3B97-9E8C-6E55A378DB42}</Project>
+      <Name>lib1526</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1527.vcxproj">
+      <Project>{E10D5B98-4E4F-3419-B75E-BA4C8BC0746E}</Project>
+      <Name>lib1527</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1528.vcxproj">
+      <Project>{8D036AB0-0549-3291-A35C-628831E85EC9}</Project>
+      <Name>lib1528</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1529.vcxproj">
+      <Project>{83549DEE-7742-343A-87D9-3CB321A17412}</Project>
+      <Name>lib1529</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1530.vcxproj">
+      <Project>{EFC1CA4F-BB79-3889-A90E-A2F60CE16AF0}</Project>
+      <Name>lib1530</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1531.vcxproj">
+      <Project>{BA48A289-F1A5-3C08-9C0D-0F51363A5DAE}</Project>
+      <Name>lib1531</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1532.vcxproj">
+      <Project>{E51CAB10-697D-31B7-A03A-FC9840ACB934}</Project>
+      <Name>lib1532</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1533.vcxproj">
+      <Project>{A9B341E7-5EFE-3EE9-944C-039F8F0A179C}</Project>
+      <Name>lib1533</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1534.vcxproj">
+      <Project>{BF92E53D-EE32-34E9-8010-AF3795EB3D6F}</Project>
+      <Name>lib1534</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1535.vcxproj">
+      <Project>{37E70A8E-5A3F-3BAB-B5AB-8EEB164F2E26}</Project>
+      <Name>lib1535</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1536.vcxproj">
+      <Project>{BD169E17-F172-30D0-BA89-4A1E41372D94}</Project>
+      <Name>lib1536</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1537.vcxproj">
+      <Project>{7CA0C5CC-D12B-38C8-95A2-B55612FBF721}</Project>
+      <Name>lib1537</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1538.vcxproj">
+      <Project>{DF5B047C-A670-33E4-A8BC-ACEF305BE0DC}</Project>
+      <Name>lib1538</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1539.vcxproj">
+      <Project>{6FE9A10A-7CAF-3901-992E-B46F381E897B}</Project>
+      <Name>lib1539</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1540.vcxproj">
+      <Project>{AB8AF269-2ADC-3C57-80BA-9FA9A2463814}</Project>
+      <Name>lib1540</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1550.vcxproj">
+      <Project>{676C5044-4FF0-31F7-BC90-D6453839A588}</Project>
+      <Name>lib1550</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1551.vcxproj">
+      <Project>{932F2942-5F03-3E65-8D7F-0D83167B9640}</Project>
+      <Name>lib1551</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1552.vcxproj">
+      <Project>{23AC2E25-070F-3B63-B911-C924657DC861}</Project>
+      <Name>lib1552</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1553.vcxproj">
+      <Project>{0A4A9704-3DD3-3A9E-A7A6-9A3CCC7F5C27}</Project>
+      <Name>lib1553</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1554.vcxproj">
+      <Project>{FBE4D706-5664-3312-B62E-65365CECE28F}</Project>
+      <Name>lib1554</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1555.vcxproj">
+      <Project>{A4AB98E1-4AA9-39B1-BAA2-71F6279502CA}</Project>
+      <Name>lib1555</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1556.vcxproj">
+      <Project>{AB5D48C4-B321-39EB-9169-D1C9E3819B5D}</Project>
+      <Name>lib1556</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1557.vcxproj">
+      <Project>{2A507643-F1B1-38B6-A099-12F904544850}</Project>
+      <Name>lib1557</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1558.vcxproj">
+      <Project>{DAC6FBBA-6B02-3241-B02C-E616B157AED8}</Project>
+      <Name>lib1558</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1559.vcxproj">
+      <Project>{42615676-14B4-3201-B855-19406170D89E}</Project>
+      <Name>lib1559</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1560.vcxproj">
+      <Project>{07B80B0D-4ECA-3319-8052-0FCDABF311E8}</Project>
+      <Name>lib1560</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1564.vcxproj">
+      <Project>{D25EC800-FC93-3306-BB94-D5C3DB768157}</Project>
+      <Name>lib1564</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1565.vcxproj">
+      <Project>{32CB1508-20B8-3313-B8E3-92BAC27480E4}</Project>
+      <Name>lib1565</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1567.vcxproj">
+      <Project>{794791FC-058B-3699-810C-D0A5CE220A6F}</Project>
+      <Name>lib1567</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1568.vcxproj">
+      <Project>{E08FA513-CA21-396B-A334-9BDC899F7EBD}</Project>
+      <Name>lib1568</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1591.vcxproj">
+      <Project>{BE8F973D-18B3-3201-AAEF-9D9A7216074F}</Project>
+      <Name>lib1591</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1592.vcxproj">
+      <Project>{7CE4EF29-F8B5-3050-9F21-0712DB8CC9CD}</Project>
+      <Name>lib1592</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1593.vcxproj">
+      <Project>{A7C2CE6C-C245-3C24-89D3-E18295AC1ACB}</Project>
+      <Name>lib1593</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1594.vcxproj">
+      <Project>{6833129F-FF02-3ED5-BFC2-9E9A9794D1D8}</Project>
+      <Name>lib1594</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1596.vcxproj">
+      <Project>{3CE21BDF-569A-352B-8A1E-91A047AD5B27}</Project>
+      <Name>lib1596</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1905.vcxproj">
+      <Project>{169D849B-28D3-345F-B261-077E802BBE58}</Project>
+      <Name>lib1905</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1906.vcxproj">
+      <Project>{8D95222B-4AE9-3364-8AE6-9997D9591737}</Project>
+      <Name>lib1906</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1907.vcxproj">
+      <Project>{191C0260-5AE2-33A3-BD97-BF278C032D0B}</Project>
+      <Name>lib1907</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1908.vcxproj">
+      <Project>{18D39E6F-C78D-38BF-A6AA-FF61D7F82C18}</Project>
+      <Name>lib1908</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1910.vcxproj">
+      <Project>{EE495A3A-E69B-3496-ABDA-9B04B55C3624}</Project>
+      <Name>lib1910</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1911.vcxproj">
+      <Project>{C88E56D7-A1C1-3D03-BD18-4C4129517244}</Project>
+      <Name>lib1911</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1912.vcxproj">
+      <Project>{654B0CEB-105D-35DC-8203-63B978229175}</Project>
+      <Name>lib1912</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1913.vcxproj">
+      <Project>{E844B91F-54F8-38FD-8B11-2F62D1D4E777}</Project>
+      <Name>lib1913</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1915.vcxproj">
+      <Project>{D68B98E4-300E-3C8A-A9DA-7BFD13CEE3C7}</Project>
+      <Name>lib1915</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1916.vcxproj">
+      <Project>{FCB7A907-6452-3260-9816-1D39F0D16653}</Project>
+      <Name>lib1916</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1917.vcxproj">
+      <Project>{2F827A21-C2DB-3695-93A9-76C88FEB2AE4}</Project>
+      <Name>lib1917</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1918.vcxproj">
+      <Project>{DF04A85A-F59D-3435-9F4D-61E0E1C373F1}</Project>
+      <Name>lib1918</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1933.vcxproj">
+      <Project>{D650BB72-3251-32DB-82EF-A29DE6D48228}</Project>
+      <Name>lib1933</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1934.vcxproj">
+      <Project>{25EBD19C-165B-36AC-A3E9-4A3ABC7A178C}</Project>
+      <Name>lib1934</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1935.vcxproj">
+      <Project>{65D1E5E3-B4B5-3728-B7DC-2D809EE4D497}</Project>
+      <Name>lib1935</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib1936.vcxproj">
+      <Project>{DD844C02-830E-37CC-9A2D-280B21CD5DC9}</Project>
+      <Name>lib1936</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib3010.vcxproj">
+      <Project>{C69AB005-2252-3B43-ACBD-5A51F7262D59}</Project>
+      <Name>lib3010</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib500.vcxproj">
+      <Project>{E68DA196-8666-32C1-8499-09698BD1962B}</Project>
+      <Name>lib500</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib501.vcxproj">
+      <Project>{66FA6034-41DE-388B-9DA5-CD2CB285F476}</Project>
+      <Name>lib501</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib502.vcxproj">
+      <Project>{E3918D7F-C192-3E54-AD2B-04DD637C355A}</Project>
+      <Name>lib502</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib503.vcxproj">
+      <Project>{5F328915-D5E1-3B5A-A6F7-61A82EB0F8B8}</Project>
+      <Name>lib503</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib504.vcxproj">
+      <Project>{FE55F7F1-75BE-3356-9B3C-35F1BAC41394}</Project>
+      <Name>lib504</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib505.vcxproj">
+      <Project>{F0C0A05C-2AC3-32F7-A4AC-518007AEFDE1}</Project>
+      <Name>lib505</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib506.vcxproj">
+      <Project>{182C1137-441F-3250-990E-452A396D0F6C}</Project>
+      <Name>lib506</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib507.vcxproj">
+      <Project>{4A370260-C6EB-34FF-A21D-981BBD877F21}</Project>
+      <Name>lib507</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib508.vcxproj">
+      <Project>{E59976C0-FFC7-3628-B2F5-A196444AAFF3}</Project>
+      <Name>lib508</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib509.vcxproj">
+      <Project>{31418A2F-5181-37CD-B898-7149367BD0B4}</Project>
+      <Name>lib509</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib510.vcxproj">
+      <Project>{43EF5CB8-8F68-3B81-B5C5-05314F9A5F48}</Project>
+      <Name>lib510</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib511.vcxproj">
+      <Project>{20869F7E-C80A-3077-B3DE-A98DCD2B8BA6}</Project>
+      <Name>lib511</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib512.vcxproj">
+      <Project>{12E2AF2C-EE4B-3802-8CAE-A5305C45FA83}</Project>
+      <Name>lib512</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib513.vcxproj">
+      <Project>{4B8DB28D-89ED-3D26-B29F-9C7C84FEA438}</Project>
+      <Name>lib513</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib514.vcxproj">
+      <Project>{2C62EDD2-4F4B-32CF-98D2-283CB0F6EB97}</Project>
+      <Name>lib514</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib515.vcxproj">
+      <Project>{5EC66619-A0E1-38AB-A451-F13A9519F57A}</Project>
+      <Name>lib515</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib516.vcxproj">
+      <Project>{47E63C07-9ABD-33AA-897E-D1E81662A0C8}</Project>
+      <Name>lib516</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib517.vcxproj">
+      <Project>{D4A21C3D-1D42-3A62-9E38-BC5A537B97F4}</Project>
+      <Name>lib517</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib518.vcxproj">
+      <Project>{0FF694E5-88EE-34A9-A5AD-735D5AA8544B}</Project>
+      <Name>lib518</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib519.vcxproj">
+      <Project>{4786D80C-D93E-302F-A3B0-5E2707449AF8}</Project>
+      <Name>lib519</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib520.vcxproj">
+      <Project>{01385E20-4257-3D01-87AE-371D50C5EEE1}</Project>
+      <Name>lib520</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib521.vcxproj">
+      <Project>{51758C74-C45E-3541-A0C6-A130C93D5E19}</Project>
+      <Name>lib521</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib523.vcxproj">
+      <Project>{33C794F1-7014-3EA0-A6D7-F35BA7AE2818}</Project>
+      <Name>lib523</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib524.vcxproj">
+      <Project>{FB49D1E8-1BAE-3452-B72A-B9D993C5597B}</Project>
+      <Name>lib524</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib525.vcxproj">
+      <Project>{48A56034-BAC4-3B8E-B275-3FEE67321505}</Project>
+      <Name>lib525</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib526.vcxproj">
+      <Project>{CDD592B2-4348-3172-A0C7-3A857B0AE934}</Project>
+      <Name>lib526</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib527.vcxproj">
+      <Project>{C6A85EF2-7848-3066-9BF5-BE21501CE85C}</Project>
+      <Name>lib527</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib529.vcxproj">
+      <Project>{5B732918-DF8B-3F82-9F3A-5B9BB1B52557}</Project>
+      <Name>lib529</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib532.vcxproj">
+      <Project>{29F70DF7-55D8-3A8F-9F59-2369DE9178E9}</Project>
+      <Name>lib532</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib533.vcxproj">
+      <Project>{3306237F-70FA-3BB9-84EE-529C4C102883}</Project>
+      <Name>lib533</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib537.vcxproj">
+      <Project>{D927E237-E41C-3AC4-98DC-D2FB536013EE}</Project>
+      <Name>lib537</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib539.vcxproj">
+      <Project>{AC9A1CE5-7BC5-3192-A1CD-B50421C4B4A9}</Project>
+      <Name>lib539</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib540.vcxproj">
+      <Project>{B707E38F-152A-3902-9935-7AB7A6DECE0E}</Project>
+      <Name>lib540</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib541.vcxproj">
+      <Project>{A69ABE75-82CD-302A-AC61-489E8280D221}</Project>
+      <Name>lib541</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib542.vcxproj">
+      <Project>{7485B700-62A1-376A-B852-DEFB01303CC0}</Project>
+      <Name>lib542</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib543.vcxproj">
+      <Project>{D80828A2-C1AD-3787-889E-6D482FE736D3}</Project>
+      <Name>lib543</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib544.vcxproj">
+      <Project>{6FC3A19A-5AAB-3DB7-8B40-2D9A3055DC8E}</Project>
+      <Name>lib544</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib545.vcxproj">
+      <Project>{4EE4CA18-34B0-3413-BD12-286919726AFD}</Project>
+      <Name>lib545</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib547.vcxproj">
+      <Project>{0AE921A3-4847-3B67-89B4-557DA60F6A5C}</Project>
+      <Name>lib547</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib548.vcxproj">
+      <Project>{CE3647C0-D323-377E-B05C-7A4B5B2DD46B}</Project>
+      <Name>lib548</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib549.vcxproj">
+      <Project>{667A0731-85EF-37C0-A22E-4E8D20F90497}</Project>
+      <Name>lib549</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib552.vcxproj">
+      <Project>{52866818-2286-3BA9-8F9F-85A31610A0C3}</Project>
+      <Name>lib552</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib553.vcxproj">
+      <Project>{43DDF4A3-368E-3327-A7E1-5F69E885D5A5}</Project>
+      <Name>lib553</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib554.vcxproj">
+      <Project>{0EB58E55-AB18-325D-B3D2-18D486E783FE}</Project>
+      <Name>lib554</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib555.vcxproj">
+      <Project>{CD9ED88C-3EAD-39ED-B4A6-576AA21CD03C}</Project>
+      <Name>lib555</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib556.vcxproj">
+      <Project>{0B182877-8E01-3A01-A7C6-8BA00BEE4F25}</Project>
+      <Name>lib556</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib557.vcxproj">
+      <Project>{B63B7A4C-F2DA-3B3E-B308-F881925C7173}</Project>
+      <Name>lib557</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib558.vcxproj">
+      <Project>{D64745E7-C53C-3B75-B3C0-FAAAC073CE54}</Project>
+      <Name>lib558</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib559.vcxproj">
+      <Project>{D7C7A2F1-3D35-3230-A959-905731BD2FAB}</Project>
+      <Name>lib559</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib560.vcxproj">
+      <Project>{C64F87B0-3043-348D-B8D7-D28B1E7C3487}</Project>
+      <Name>lib560</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib562.vcxproj">
+      <Project>{AF16F91E-0A76-353C-8377-FA9BEECB97F6}</Project>
+      <Name>lib562</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib564.vcxproj">
+      <Project>{C36EF81F-96A4-3C9C-A10F-78A013E6E356}</Project>
+      <Name>lib564</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib565.vcxproj">
+      <Project>{AB4FF8EA-30BB-3DD1-A771-DCF65719A882}</Project>
+      <Name>lib565</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib566.vcxproj">
+      <Project>{AFFF8817-B97E-34D4-B2D0-17C1A0C9743D}</Project>
+      <Name>lib566</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib567.vcxproj">
+      <Project>{6A464141-BA57-33C8-9FC3-D7ED6761B420}</Project>
+      <Name>lib567</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib568.vcxproj">
+      <Project>{1997E89D-1738-39B7-BE73-8A4B1E6CFA69}</Project>
+      <Name>lib568</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib569.vcxproj">
+      <Project>{500F8D52-A886-3DB5-A509-3D62CE7E0225}</Project>
+      <Name>lib569</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib570.vcxproj">
+      <Project>{3CA0B926-0BE2-3D75-8CD2-E0A7FB71457E}</Project>
+      <Name>lib570</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib571.vcxproj">
+      <Project>{353A3EA1-04C7-381A-8F81-3FB825F5F09E}</Project>
+      <Name>lib571</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib572.vcxproj">
+      <Project>{2C860624-AB42-3B29-AAC9-A6E15A6B4847}</Project>
+      <Name>lib572</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib573.vcxproj">
+      <Project>{9CBB054C-A35F-33CB-893B-3CBA0E37D380}</Project>
+      <Name>lib573</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib574.vcxproj">
+      <Project>{2AF9933A-E4E8-3027-B70B-88168B27FD82}</Project>
+      <Name>lib574</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib575.vcxproj">
+      <Project>{ADE60146-2B1B-3F59-8D14-465DE2A2B79C}</Project>
+      <Name>lib575</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib576.vcxproj">
+      <Project>{0AB7709D-9BBA-3253-907D-C9519457186F}</Project>
+      <Name>lib576</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib578.vcxproj">
+      <Project>{CABF717C-5AA1-35CC-9C78-F721A0DF3B47}</Project>
+      <Name>lib578</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib579.vcxproj">
+      <Project>{AA73253B-1AE1-35C1-8E36-9DD9215E5A7E}</Project>
+      <Name>lib579</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib582.vcxproj">
+      <Project>{E7A034A4-AE16-31DB-98BB-6B25E7CFA60F}</Project>
+      <Name>lib582</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib583.vcxproj">
+      <Project>{31CB3A2E-4A2C-3EE0-9240-ED1719BB71F0}</Project>
+      <Name>lib583</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib584.vcxproj">
+      <Project>{C834457F-182E-3C1A-866E-C2E97CB4BE11}</Project>
+      <Name>lib584</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib585.vcxproj">
+      <Project>{88D1A30F-4B74-3F43-81DF-3A5170E8C39C}</Project>
+      <Name>lib585</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib586.vcxproj">
+      <Project>{CBD21EBE-9543-3A45-8B6C-A91EC4C73EF6}</Project>
+      <Name>lib586</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib587.vcxproj">
+      <Project>{EBE95713-D601-3791-B55F-1E89FC6E48DA}</Project>
+      <Name>lib587</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib589.vcxproj">
+      <Project>{E7DCF4AA-8C8E-38FB-A987-C104759C0C07}</Project>
+      <Name>lib589</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib590.vcxproj">
+      <Project>{EC6E7B56-14B5-328D-9E5C-C7EB8F125441}</Project>
+      <Name>lib590</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib591.vcxproj">
+      <Project>{997E9DA7-4515-30F5-9E21-0EDE9D160BA8}</Project>
+      <Name>lib591</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib597.vcxproj">
+      <Project>{24F4F0D7-643A-3488-9A5D-0CE38D90FB65}</Project>
+      <Name>lib597</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib598.vcxproj">
+      <Project>{26D9E75A-DE25-3BEA-A0F1-D6C6DEB40F41}</Project>
+      <Name>lib598</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib599.vcxproj">
+      <Project>{1DDD3BC0-1557-3881-8F55-A6B8DCDA3AA4}</Project>
+      <Name>lib599</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib643.vcxproj">
+      <Project>{2E26D689-3269-389F-A949-C6B41900287C}</Project>
+      <Name>lib643</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib644.vcxproj">
+      <Project>{471361CE-DC94-3904-9E77-56EA900323B8}</Project>
+      <Name>lib644</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib645.vcxproj">
+      <Project>{76A9CE7F-32F1-34E9-903F-CFFB86B3A902}</Project>
+      <Name>lib645</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib650.vcxproj">
+      <Project>{C953C3F1-5D99-3E0B-BC29-B0ABACA6746E}</Project>
+      <Name>lib650</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib651.vcxproj">
+      <Project>{5C01BBD7-7103-3A06-975C-67BC430817B3}</Project>
+      <Name>lib651</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib652.vcxproj">
+      <Project>{57B7977D-30FD-30FB-9253-379F18F5E5C2}</Project>
+      <Name>lib652</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib653.vcxproj">
+      <Project>{1E6D8AB8-929D-37F6-A65E-844FA115D7D4}</Project>
+      <Name>lib653</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib654.vcxproj">
+      <Project>{D408E1F2-A520-3FE4-93CA-AA277E7ED0D4}</Project>
+      <Name>lib654</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib655.vcxproj">
+      <Project>{5E1251AB-1582-36EC-A9C4-09C10A573F7C}</Project>
+      <Name>lib655</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib658.vcxproj">
+      <Project>{622779EC-CCA1-3D6B-8D95-8E3B6E644C72}</Project>
+      <Name>lib658</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib659.vcxproj">
+      <Project>{F6B85A10-302C-3C81-B107-F10375A9AC51}</Project>
+      <Name>lib659</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib661.vcxproj">
+      <Project>{EB79C0C0-49FB-3A5A-8903-4E2FFD1AF4E2}</Project>
+      <Name>lib661</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib666.vcxproj">
+      <Project>{F346D8D4-4528-375C-925D-AF54762834FA}</Project>
+      <Name>lib666</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib667.vcxproj">
+      <Project>{F9573252-F434-38F3-8079-7932FF1A6C8F}</Project>
+      <Name>lib667</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib668.vcxproj">
+      <Project>{FCD32F0C-0144-3F75-A612-B901223AB185}</Project>
+      <Name>lib668</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib670.vcxproj">
+      <Project>{0B01D85E-7255-3615-89C7-17A51985279A}</Project>
+      <Name>lib670</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib671.vcxproj">
+      <Project>{87C68332-639F-32FA-8208-03308345D794}</Project>
+      <Name>lib671</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib672.vcxproj">
+      <Project>{F3A303B0-AE77-3E43-914A-C729998326D0}</Project>
+      <Name>lib672</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib673.vcxproj">
+      <Project>{19755A78-4DB4-3742-84EF-B8FC122AA150}</Project>
+      <Name>lib673</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\lib674.vcxproj">
+      <Project>{817F7508-67E0-37BE-8F7A-4AB3B8B62145}</Project>
+      <Name>lib674</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\libauthretry.vcxproj">
+      <Project>{8FA62775-8884-3C3F-9CD4-FBF8D6E57FDA}</Project>
+      <Name>libauthretry</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\libtest\libntlmconnect.vcxproj">
+      <Project>{B44BAA03-5D1B-3A67-9473-F9519DC8AB57}</Project>
+      <Name>libntlmconnect</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\server\mqttd.vcxproj">
+      <Project>{9E2090B1-38E7-3387-89EA-1C59F3D6D4A9}</Project>
+      <Name>mqttd</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\server\resolve.vcxproj">
+      <Project>{1A1A703D-4118-3A50-8E0F-95B7DEAEE86D}</Project>
+      <Name>resolve</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\server\rtspd.vcxproj">
+      <Project>{4B3ED67A-BAE4-303D-8BA1-01161C9A5363}</Project>
+      <Name>rtspd</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\server\sockfilt.vcxproj">
+      <Project>{EBCEF84A-AF1A-36B1-A96A-F80B7DAE89EA}</Project>
+      <Name>sockfilt</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\server\socksd.vcxproj">
+      <Project>{2A63CFD7-95AB-3443-90ED-FA4BD2F358A0}</Project>
+      <Name>socksd</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\server\sws.vcxproj">
+      <Project>{6028DDB3-3C4A-3AD4-BF00-CB999AA6BB41}</Project>
+      <Name>sws</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-7.75.0\msvc\tests\server\tftpd.vcxproj">
+      <Project>{DC19AE65-DD35-3A95-A997-F4C0896F0479}</Project>
+      <Name>tftpd</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
